@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sandeep Sathyaprakash Unni | BTech CSE Student Portfolio">
+  <title>Sandeep Sathyaprakash Unni | Portfolio</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FOUC Dark Mode Prevention Script -->
+  <meta name="color-scheme" content="light dark">
+  <script>
+    {
+      const colorScheme = localStorage.getItem("color-scheme");
+      if (colorScheme) {
+        document.querySelector('meta[name="color-scheme"]').content = colorScheme;
+        document.documentElement.setAttribute('data-theme', colorScheme);
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="progress" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#hero" class="logo">
+        <span class="logo-dot"></span>Sandeep.dev
+      </a>
+      
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Utility Actions -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" aria-label="Toggle light and dark theme" class="theme-toggle-btn">
+          <!-- Sun Icon -->
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon -->
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Trigger -->
+        <button id="mobile-menu-btn" aria-label="Open navigation menu" class="mobile-menu-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation -->
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay">
+    <nav class="mobile-nav" aria-label="Mobile Navigation">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-shapes" aria-hidden="true">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+      </div>
+      <div class="hero-container container">
+        <div class="hero-content">
+          <span class="hero-badge">BTech CSE Student</span>
+          <h1 class="hero-title">
+            Sandeep <br>
+            Sathyaprakash <span class="text-gradient">Unni</span>
+          </h1>
+          <p class="hero-subtitle">
+            I am a Computer Science Engineering student at Reva University interested in programming, mathematics, and solving complex abstract problems.
+          </p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down-hint" aria-label="Scroll to About section">
+        <span class="mouse-icon">
+          <span class="wheel"></span>
+        </span>
+      </a>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section container section-padding reveal">
+      <div class="section-header">
+        <span class="section-label">01. About Me</span>
+        <h2 class="section-title">My Story</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <div class="avatar-card">
+            <img src="avatar.png" alt="Sandeep Sathyaprakash Unni Portrait" class="avatar-img">
+          </div>
+        </div>
+        <div class="about-text">
+          <h3 class="about-heading">Student & Programmer</h3>
+          <p>
+            I am currently pursuing my Bachelor of Technology (BTech) in Computer Science and Engineering at Reva University. I have a deep passion for writing clean code and exploring the inner workings of computer science systems.
+          </p>
+          <p>
+            Beyond academic curriculums, my primary interests lie in reading, sports, and dedicating time to analyze and solve complex mathematical and abstract problems. I believe that writing elegant algorithms is an art form, and I constantly challenge myself to write efficient, structured solutions.
+          </p>
+          <ul class="about-quick-stats">
+            <li><strong>Location:</strong> Jakkur, Bengaluru, India</li>
+            <li><strong>Email:</strong> sandeep00uni@gmail.com</li>
+            <li><strong>Interests:</strong> Coding, Math, Sports, Reading</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section container section-padding reveal">
+      <div class="section-header">
+        <span class="section-label">02. Expertise</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <!-- Languages Card -->
+        <div class="skills-card glass-card">
+          <div class="skills-card-header">
+            <div class="icon-box frontend-icon"></div>
+            <h3>Core Languages</h3>
+          </div>
+          <ul class="skills-list">
+            <li>C Programming</li>
+            <li>C++ (Object-Oriented)</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>MATLAB</li>
+          </ul>
+        </div>
+
+        <!-- Problem Solving Card -->
+        <div class="skills-card glass-card">
+          <div class="skills-card-header">
+            <div class="icon-box tools-icon"></div>
+            <h3>Problem Solving</h3>
+          </div>
+          <ul class="skills-list">
+            <li>Complex Mathematical Analysis</li>
+            <li>Logical Modeling</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section container section-padding reveal">
+      <div class="section-header">
+        <span class="section-label">03. Education</span>
+        <h2 class="section-title">Educational Institutions</h2>
+      </div>
+      <div class="education-grid">
+        <!-- Inst 1 -->
+        <div class="education-card glass-card">
+          <span class="edu-year">Higher Education</span>
+          <h3>Reva University</h3>
+          <span class="school-name">B.Tech in Computer Science and Engineering</span>
+          <p>Studying core subjects like Algorithms, Database Systems, Computer Networks, and Discrete Mathematics. Engaged in programming assignments and computational challenge projects.</p>
+        </div>
+
+        <!-- Inst 2 -->
+        <div class="education-card glass-card">
+          <span class="edu-year">Secondary Education</span>
+          <h3>Sunrise English Private School</h3>
+          <span class="school-name">High Schooling</span>
+          <p>Built a strong foundation in physics, chemistry, advanced mathematics, and introductory computer programming.</p>
+        </div>
+
+        <!-- Inst 3 -->
+        <div class="education-card glass-card">
+          <span class="edu-year">Primary Education</span>
+          <h3>Abu Dhabi Indian School</h3>
+          <span class="school-name">Primary & Middle Schooling</span>
+          <p>Initiated computational thinking, analytical reasoning, science programs, and athletic sports events.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section container section-padding reveal">
+      <div class="section-header">
+        <span class="section-label">04. Showcase</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card glass-card">
+          <div class="project-image-container">
+            <img src="project_canvas_editor.png" alt="C Canvas-Shape Editor Screenshot mockup" class="project-img">
+          </div>
+          <div class="project-info">
+            <span class="project-type">System Application</span>
+            <h3 class="project-card-title">C Canvas-Shape Editor</h3>
+            <p class="project-description">
+              A custom 2D graphics canvas rendering environment built in C. Allows creation, layers positioning, color selection, and transformations of shapes like rectangles, circles, lines, and stars.
+            </p>
+            <div class="project-tags">
+              <span class="tag">C Programming</span>
+              <span class="tag">Graphics Rendering</span>
+              <span class="tag">Data Structures</span>
+              <span class="tag">Algorithms</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sandeepuni" class="project-link" aria-label="View C Canvas-Shape Editor on GitHub">View on GitHub &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card glass-card">
+          <div class="project-image-container">
+            <img src="project_hotel_mgmt.png" alt="Hotel Management System Dashboard mockup" class="project-img">
+          </div>
+          <div class="project-info">
+            <span class="project-type">Management Software</span>
+            <h3 class="project-card-title">Hotel Management System</h3>
+            <p class="project-description">
+              A comprehensive system application tracking room availability, guest check-ins/check-outs, bills calculation, and housekeeping schedules. Features a sleek calendar scheduler.
+            </p>
+            <div class="project-tags">
+              <span class="tag">C++ / Python</span>
+              <span class="tag">Database Design</span>
+              <span class="tag">Dashboard UI</span>
+              <span class="tag">System Design</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sandeepuni" class="project-link" aria-label="View Hotel Management System on GitHub">View on GitHub &rarr;</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section container section-padding reveal">
+      <div class="section-header" style="text-align: center;">
+        <span class="section-label">05. Connect</span>
+        <h2 class="section-title" style="text-align: center;">Contact Details</h2>
+      </div>
+      <div class="contact-centered-card glass-card">
+        <p style="text-align: center; max-width: 600px; margin: 0 auto var(--spacing-lg) auto; color: var(--color-muted);">
+          Feel free to write to me regarding code architectures, math algorithms, sports, or if you'd like to collaborate on abstract programming problem-solving.
+        </p>
+        <div class="contact-details-grid">
+          <div class="contact-detail-item">
+            <span class="detail-label">Email</span>
+            <a href="mailto:sandeep00uni@gmail.com" class="detail-value">sandeep00uni@gmail.com</a>
+          </div>
+          <div class="contact-detail-item">
+            <span class="detail-label">Location</span>
+            <span class="detail-value">Jakkur, Bengaluru, India</span>
+          </div>
+          <div class="contact-detail-item">
+            <span class="detail-label">GitHub</span>
+            <a href="https://github.com/sandeepuni" class="detail-value" target="_blank" rel="noopener noreferrer">github.com/sandeepuni</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container container">
+      <p>&copy; 2026 Sandeep Sathyaprakash Unni. All rights reserved.</p>
+      <p>Built with native HTML, CSS & JS.</p>
+    </div>
+  </footer>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
